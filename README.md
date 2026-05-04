@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
+OpenEnv: AI-Powered Web Perception & Multi-Agent MCP
+### 1. Create the File
+Run this in your terminal:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+nano README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Paste this Content
+```markdown
+# MCP - Notte Browser Agent 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A high-performance Model Context Protocol (MCP) frontend built with **Next.js**, **Notte SDK**, and **Patchright**. Designed for advanced web perception and AI automation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
+*   **Perception Engine**: Powered by Notte SDK for turning websites into structured data.
+*   **Headless Automation**: Uses Patchright (Chromium) with Ubuntu 24.04 compatibility.
+*   **Modern UI**: Glassmorphism and minimalist aesthetic.
+*   **Vercel Ready**: Optimized for serverless deployment with a full `requirements.txt`.
 
-## Learn More
+## Tech Stack
+*   **Frontend**: Next.js (TypeScript)
+*   **AI Engine**: Notte Agent & SDK
+*   **Browser**: Patchright (Chromium)
+*   **Environment**: Python 3.12 (Virtual Environment)
 
-To learn more about Next.js, take a look at the following resources:
+## Local Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the Repo**:
+   ```bash
+   git clone [https://github.com/jouzia/MCP.git](https://github.com/jouzia/MCP.git)
+   cd MCP/frontend
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Setup Virtual Environment**:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
-## Deploy on Vercel
+3. **Install Browser Dependencies**:
+   ```bash
+   patchright install --with-deps chromium
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
+This project is configured for **Vercel**. Simply connect your GitHub repository and ensure your Environment Variables are set.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Built by [Shaik Jouzia Afreen](https://github.com/jouzia) | BCA Student at St. Joseph’s College.
+```
+
+---
+
+### 3. Push the Update
+After saving the file (`Ctrl+O`, `Enter`, `Ctrl+X`), push it to GitHub using your token:
+
+```bash
+git add README.md
+git commit -m "docs: add professional README"
+git push origin main --force
+```
